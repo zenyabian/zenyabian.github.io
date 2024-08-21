@@ -1,3 +1,3 @@
 # zenyabian.github.io
 
-permalink: /grid_portfolio.html
+permalink: /index.html
