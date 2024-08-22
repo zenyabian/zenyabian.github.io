@@ -1,0 +1,188 @@
+.animation-row {
+    font-size: 2em;
+    font-family: InterSemiBold;
+}
+
+.black-border {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.body-container {
+    margin-top: 3em;
+}
+
+.body-column {
+    padding-top: 0.5em;
+}
+
+.body-row {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.custom-h3 {
+    font-family: InterSemiBold;
+}
+
+.custom-h6 {
+    font-family: InterRegular;
+}
+
+.custom-hr {
+    background-color: black;
+}
+
+.fullscreen-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('grid_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat repeat;
+    z-index: -1;
+}
+
+.max-width {
+    max-width: 420px;
+    width: 100%;
+}
+
+.footer-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* double top border pseudo element */
+
+.double-top-border {
+    position: relative;
+}
+
+.double-top-border::before,
+.double-top-border::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background-color: black;
+}
+
+.double-top-border::before {
+    top: 0; 
+}
+
+.double-top-border::after {
+    top: 1.5em; 
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('grid_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat repeat;
+    z-index: -1;
+
+    overflow-x: hidden; /* remove horizontal scrollbar */
+
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    font-family: DMMonoRegular;
+    font-size: 0.8em;
+}
+
+#column_one {
+    padding-top: 2em;
+}
+
+#row_one {
+    margin-top: 2em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#spotify_playlist {
+    margin-bottom: 1em;
+}
+
+#desmos_graph {
+    margin-bottom: 1em;
+}
+
+#cat_pic{
+    margin-bottom: 1em;
+}
+
+#footer_row {
+    padding-bottom: 0em;
+}
+
+#footer_hr {
+    margin-top: 3em;
+    background-color: black;
+    width: 100%;
+}
+
+@font-face {
+    font-family: InterSemiBold;
+    src: url(fonts/Inter_28pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(fonts/Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: DMMonoRegular;
+    src: url(fonts/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: DMMonoLightItalic;
+    src: url(fonts/DMMono-LightItalic.ttf);
+}
+
