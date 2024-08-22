@@ -100,9 +100,6 @@
     top: 1.5em; 
 }
 
-html {
-    overflow-x: hidden;
-}
 body {
     position: relative;
     top: 0;
