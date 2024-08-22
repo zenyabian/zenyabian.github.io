@@ -58,10 +58,11 @@
 
 .marquee {
     position: relative;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     height: 200px;
-    overflow-x: hidden;
+    overflow: hidden;
+    border: 1px solid black;
 }
   
 .track {
@@ -100,8 +101,14 @@
     top: 1.5em; 
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 body {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -112,7 +119,7 @@ body {
     background-repeat: repeat repeat;
     z-index: -1;
 
-    overflow-x: hidden; /* remove horizontal scrollbar */
+     /* overflow-x: hidden; remove horizontal scrollbar */
 
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
