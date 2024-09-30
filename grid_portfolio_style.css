@@ -33,19 +33,6 @@
     background-color: black;
 }
 
-.fullscreen-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('grid_background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat repeat;
-    z-index: -1;
-}
-
 .max-width {
     max-width: 420px;
     width: 100%;
@@ -118,9 +105,6 @@ body {
     background-position: center;
     background-repeat: repeat repeat;
     z-index: -1;
-
-     /* overflow-x: hidden; remove horizontal scrollbar */
-
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
