@@ -95,14 +95,12 @@ html, body {
 }
 
 body {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("grid_background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat repeat;
+    background: url("grid_background.png") center/cover repeat;
     z-index: -1;
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
