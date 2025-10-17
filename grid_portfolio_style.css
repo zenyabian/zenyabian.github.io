@@ -94,17 +94,12 @@ html, body {
     overflow-y: scroll;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body { 
+    background-image: url("grid_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 }
-
-body {
-    background: url("grid_background.png") center/cover repeat;
-    animation: fadeInAnimation ease 2.5s forwards;
-}
-
 
 @keyframes fadeInAnimation {
     0% {
@@ -168,5 +163,6 @@ p {
     font-family: DMMonoLightItalic;
     src: url(fonts/DMMono-LightItalic.ttf);
 }
+
 
 
